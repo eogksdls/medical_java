@@ -21,9 +21,11 @@ public class C0619_10 {
 		Loop1:while(true) {
 			System.out.println("[ 학생성적 프로그램 ]");
 			System.out.println("----------------------------------");
-			System.out.println("1. 학생성적 입력");
-			System.out.println("2. 학생성적 출력");
-			System.out.println("3. 학생성적 수정");
+			System.out.println("1. 학생성적입력");
+			System.out.println("2. 학생성적출력");
+			System.out.println("3. 학생성적수정");
+			System.out.println("4. 학생성적검색");
+			System.out.println("5. 등수처리");
 			System.out.println("0. 프로그램 종료");
 			System.out.println("----------------------------------");
 			System.out.print("원하시는 서비스의 번호를 입력하세요.>> ");
@@ -167,6 +169,7 @@ public class C0619_10 {
 								System.out.println("*** 해당하는 번호가 없습니다. 다시 입력해주세요. ***");
 								break;
 								
+						
 							}//switch
 							
 						}
@@ -181,6 +184,53 @@ public class C0619_10 {
 					
 				}//while Loop3
 				break;	//case3-------------------------------------------------------------------------------------------------
+				
+			case 4: 
+				System.out.println("[ 학생성적검색 ]");
+				System.out.println("----------------------------------");
+				System.out.println("1. 학생이름으로 검색");
+				System.out.println("2. 합계점수로 검색");
+				System.out.println("3. 평균점수로 검색");
+				System.out.println("----------------------------------");
+				System.out.print("원하는 번호를 입력하세요. >> ");
+				int ch = scan.nextInt();
+				scan.nextLine();
+				
+				switch(ch) {
+				case 1: 
+					System.out.println("[ 학생이름으로 검색 ]");
+					System.out.println("-------------------");
+					System.out.print("학생 이름을 입력하세요. >> ");
+					String search = scan.nextLine();
+					
+					
+					
+					break;
+				case 2:
+					System.out.println("[ 합계점수로 검색 ]");
+					System.out.println("-------------------");
+					System.out.print("합계점수를 입력하세요. >> ");
+					String sum = scan.nextLine();
+					
+					
+					
+					break;
+				case 3:
+					System.out.println("[ 평균점수로 검색 ]");
+					System.out.println("-------------------");
+					System.out.print("평균점수를 입력하세요. >> ");
+					String avg_sum = scan.nextLine();
+					
+					
+					
+					break;
+				}//학생검색 switch
+				
+				
+				break;
+			case 5:
+				
+				break;
 			default:
 				System.out.println("해당 번호의 서비스가 없습니다. 다시 입력해주세요.");
 				System.out.println("----------------------------------");

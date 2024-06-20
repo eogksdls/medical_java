@@ -19,8 +19,11 @@ public class C0619_09 {
 		Loop1: while(true) {
 			
 			System.out.println("[ 학생성적 프로그램 ]");
-			System.out.println("1. 성적입력");
-			System.out.println("2. 성적출력");
+			System.out.println("1. 학생성적입력");
+			System.out.println("2. 학생성적출력");
+			System.out.println("3. 학생성적수정");
+			System.out.println("4. 학생성적검색");
+			System.out.println("5. 등수처리");
 			System.out.println("0. 프로그램 종료");
 			System.out.println("-----------------------");
 			System.out.print("원하는 번호를 입력하세요. >> ");
